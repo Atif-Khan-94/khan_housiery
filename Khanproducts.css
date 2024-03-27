@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-image: url(https://leomen.com/cdn/shop/files/bhome-0324n54-recicle-spring-break-offer_1920x.jpg?v=1711042025);
+    height: 28vh;
+    background-position: center center;
+    background-size: max(1200px, 100vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.481);
+    background-blend-mode: darken;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+nav {
+    max-width: 460vh;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.427);
+    position: sticky;
+    top: 0%
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.468);
+    max-width: 45vh;
+}
+
+nav a {
+    padding: 46px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    font-family: 'Poppins' sans-serif;
+    font-weight: bolder;
+}
+
+.icon {
+    padding: 24px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    font-family: 'Poppins' sans-serif;
+    font-weight: bolder;
+}
+nav svg:hover{
+   background-color: aliceblue;
+}
+nav a:hover {
+    color: aliceblue;
+}
+.icon.active {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.427);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:26px 30px;
+    transition: all 1s;
+}
+@media(max-width:1041px){
+    .icon{
+        display: none;
+    }
+}
+.head{
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    color: rgba(240, 248, 255, 0.63);
+    font-weight: 800;
+}
+.products {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+    animation:  linear;
+    animation-timeline: scroll();
+    animation-range: contain 100px;
+    align-items: center;
+    justify-content: center;
+    
+}
+@keyframes linear{
+    from{scale: .8;opacity:0;}
+    to{scale: 1; opacity: 1;}
+}
+@media screen and (max-width: 650px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.text{
+    font-size: 18px;
+    font-family: 'Poppins'sans-serif;
+    font-weight: 800;
+}
+
+.sectext h1 {
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.sectext span {
+    color: red;
+}
+
+.row {
+    align-items: center;
+    transition: all .40s;
+}
+.row img {
+    width: 80%;
+    height: auto;
+}
+
+.productext {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    background-color: green;
+    max-width: 46px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.productext h5 {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.price h4 {
+    margin-bottom: 10px;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+    transition: all .40s;
+
+}
+
+.price h3 {
+    font-weight: bolder;
+}
+footer {
+    background-color: #F3F4F6;
+
+}
+
+.info {
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    display: grid;
+    gap: 3rem;
+}
+
+.firstinfo img {
+    width: 200px;
+}
+
+.info h4 {
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.firstinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.secondinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.thirdinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.fourthinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.fifthinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.info p {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.info a:hover {
+    color: red;
+}
+
+.endtxt {
+    color: #565656;
+    text-align: center;
+    padding: 20px;
+}

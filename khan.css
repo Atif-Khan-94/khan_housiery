@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: url(https://leomen.com/cdn/shop/files/best-mens-underwear-LEO_1920x.png?v=1706882975);
+    height: 91vh;
+    background-position: center center;
+    background-size: max(1200px, 100vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.481);
+    background-blend-mode: darken;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+.train video{
+    height: 100%;
+    background-position: center center;
+    background-size: max(1200px, 100vh);
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.481);
+    background-blend-mode: darken;
+    z-index: 10;
+    color: white;
+    background-color: white;
+    text-align: center;
+}
+.vidtext{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.train span{
+    color: red;
+}
+nav {
+    max-width: 460vh;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.427);
+    position: sticky;
+    top: 0%;
+    position: relative;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.468);
+    max-width: 45vh;
+}
+
+nav a {
+    padding: 46px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    font-family: 'Poppins' sans-serif;
+    font-weight: bolder;
+}
+
+.icon {
+    padding: 24px;
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    font-family: 'Poppins' sans-serif;
+    font-weight: bolder;
+}
+nav svg:hover{
+   background-color: aliceblue;
+}
+nav a:hover {
+    color: rgb(208, 213, 217);
+    transition: all 0.9s;
+}
+
+
+
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+}
+
+.hero button {
+    border: solid Grey;
+    border-radius: 7px;
+    background-color: grey;
+    color: white;
+    padding: 8px;
+    width: 150px;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.hero button:hover {
+    background-color: aliceblue;
+    border-color: aliceblue;
+}
+
+.products {
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+    animation:  linear;
+    animation-timeline: scroll();
+    animation-range: contain 100px;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes linear{
+    from{scale: .8;opacity:0;}
+    to{scale: 1; opacity: 1;}
+}
+
+
+
+.sectext h1 {
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.sectext span {
+    color: red;
+}
+
+.row {
+    align-items: center;
+    transition: all .40s;
+}
+@media screen and (max-width: 650px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.row img {
+    width: 80%;
+    height: auto;
+}
+.hero2  a{
+    text-decoration: none;
+    color: black;
+}
+
+.productext {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    background-color: green;
+    max-width: 46px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.productext h5 {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.price h4 {
+    margin-bottom: 10px;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+    transition: all .40s;
+
+}
+
+.price h3 {
+    font-weight: bolder;
+}
+
+.CEO {
+    background-color: #F3F4F6;
+}
+
+.review h3 {
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.review {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.review img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 10px 0;
+}
+
+.review p {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review span {
+    color: red;
+}
+
+.review h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.review h4 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2px;
+    padding: 14px;
+}
+
+.review button {
+    border: solid rgb(210, 210, 210);
+    border-radius: 7px;
+    background-color: rgb(210, 210, 210);
+    color: white;
+    padding: 8px;
+    width: 150px;
+    margin-bottom: 15px;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.review button:hover {
+    background-color: grey;
+    border-color: grey;
+}
+
+.img {
+    height: 91vh;
+    background-position: center center;
+    background-size: max(1200px, 100vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.481);
+    background-blend-mode: darken;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+
+.news h1 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.news span {
+    color: red;
+}
+
+.cart img {
+    width: 382px;
+    height: 365px;
+    border-radius: 5px;
+}
+
+.updatecart {
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart h2 {
+    color: Black;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -7px;
+}
+
+.cart {
+    text-align: center;
+    background-color: #e5e8f3;
+    justify-content: center;
+    transition: all 0.4s linear;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    transform: scale(0.9);
+    transition: all .40s;
+
+}
+
+.cart h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(212, 184, 23);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    max-width: 383px;
+    justify-content: center;
+}
+
+.cart p {
+    color: #707070;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    background-color: #F3F4F6;
+    margin-top: 44px;
+
+}
+
+.info {
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    display: grid;
+    gap: 3rem;
+}
+
+.firstinfo img {
+    width: 200px;
+}
+
+.info h4 {
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.firstinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.secondinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.thirdinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.fourthinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.fifthinfo {
+    margin-left: 60px;
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.info p {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.info a:hover {
+    color: red;
+}
+
+.endtxt {
+    color: #565656;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width:890px) {
+    .main {
+        transition: .4s;
+    }
+}
+
+@media(max-width:630px) {
+    .hero {
+        font-size: 50px;
+        transition: .4s;
+    }
+
+    .hero2 {
+        font-size: 18px;
+        transition: .4s;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+
+/* @media(max-width:750px) {
+    .icon {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100px;
+        height: 78vh;
+        background-color: rgba(255, 255, 255, 0.427);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:26px 30px;
+        transition: all .40s;
+    }
+    .icon {
+        right: 0%;
+    } */
+
+.icon.active {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.427);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:26px 30px;
+    transition: all 1s;
+    
+}
+@media(max-width:1041px){
+    .icon.active{
+        transition: all 1s;
+    }
+}
+@media(max-width:1041px){
+    .icon{
+        display: none;
+    }
+}
